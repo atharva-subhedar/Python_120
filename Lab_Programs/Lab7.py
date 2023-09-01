@@ -2,7 +2,7 @@
 
 import os 
 import zipfile 
-def backup_folder_to_zip(source_folder, zip_filename): 
+def backup(source_folder, zip_filename): 
   if not os.path.exists(source_folder): 
     print (f"Error: Source folder '{source_folder}' does not exist.")
     return 
@@ -14,4 +14,6 @@ def backup_folder_to_zip(source_folder, zip_filename):
     print(f"Zipping: {file_path}") 
   zipf.close() 
   print(f"Backup successful: '{source_folder}' has been backed up to '{zip_filename}.")
-  
+main_folder = input("Enter the name of the folder to backup : ")
+zip_filename = f"{main_folder}"
+backup(main_folder,zip_filename)
