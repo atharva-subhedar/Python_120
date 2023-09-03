@@ -15,10 +15,6 @@ class Complex:
         return Complex(real_part, imag_part)
     def __str__(self):
         return f"{self.real} + {self.imag}i"
-ca = Complex(-2, -5)
-cb = Complex(12, 8)
-print(ca, '+', cb, '=', (ca + cb))
-print('\n',type(ca), id(ca), '\n')
 complex_list = []
 n = int(input("How many complex numbers you want to add:"))
 for i in range(n):
