@@ -31,6 +31,7 @@ else:
   print(name + 'is not a senior citizen')
 
 ''' (c) Python program to calculate distance between two points '''
+import math
 x1 = float(input('Enter the x1 value: '))
 x2 = float(input('Enter the x2 value: '))
 y1 = float(input('Enter the y1 value: '))
