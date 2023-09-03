@@ -7,7 +7,7 @@ compute the addition of N complex numbers. '''
 
 class Complex:
     def __init__(self, real=0, imag=0):
-		self.real = real
+	self.real = real
         self.imag = imag
     def __add__(self, other):
         real_part = self.real + other.real
